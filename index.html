@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" src="css/style.css">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<div class="header">
-			<a href="#">Gmail</a>
-			<a href="#">Images</a>
-			<a href="#">
-				<img src="#">
-			</a>
-			<a href="#">
-				<div class="notifications">1</div>
-			</a>
-			<a href="#">
-				<div class="profile">S</div>
-			</a>
+			<ul>
+				<li><a href="#" class="nav_link">Gmail</a></li>
+				<li><a href="#" class="nav_link">Images</a></li>
+				<li><a href="#">
+					<img src="img/gapp.png">
+				</a></li>
+				<li><a href="#"><div class="signin">Sign in</div></a></li>
+			</ul>
 		</div>
-			<div class="content">
+		<div class="content">
 			<div class="google-image">
 				<img src="img/googlelogo.png">
 			</div>
 			<form target="#" method="GET">
-				<input type="text" name="search-query"> <br />
-				<input type="submit" name="search" value="Google Search" class="button" id="search">
-				<input type="submit" name="lucky" value="I'm Feeling Lucky" class="button" id="lucky">
+				<div class="searchbar">
+					<input type="text" name="search-query" id="search-bar">
+					<img src="img/mic.png" id="mic">
+				</div>
+				<div class="confirmsearch">
+					<input type="submit" name="search" value="Google Search" class="button" id="search">
+					<input type="submit" name="lucky" value="I'm Feeling Lucky" class="button" id="lucky">
+				</div>
 			</form>
 		</div>
 		<div class="footer">
-			<div class="footer-left">
-				<a href="#">Advertising</a>
-				<a href="#">Business</a>
-				<a href="#">About</a>
-			</div>
-			<div class="footer-right">
-				<a href="#">Privacy</a>
-				<a href="#">Terms</a>
-				<a href="#">Settings</a>
-			</div>
+			<span class="footer-left">
+				<ul>
+					<li><a href="#">Advertising</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">About</a></li>
+				</ul>	
+			</span>
+			<span class="footer-right">
+				<ul>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Settings</a></li>
+				</ul>	
+			</span>
 		</div>
 	</body>
 </html>
